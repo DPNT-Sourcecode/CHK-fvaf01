@@ -11,6 +11,7 @@ public class CheckoutSolution {
        int counterA=0;
        int counterB=0;
        int counterE=0;
+       int counterF=0;
     
        
        char[] items=skus.toCharArray();
@@ -27,6 +28,9 @@ public class CheckoutSolution {
            }
             else if (x=='E'){
             	counterE++;
+               }
+            else if (x=='F'){
+            	counterF++;
                }
             else {
 	          return -1;
@@ -61,3 +65,4 @@ public class CheckoutSolution {
     }    
     
 }
+
