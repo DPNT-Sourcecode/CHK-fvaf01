@@ -11,7 +11,7 @@ public class CheckoutSolution {
        int counterA=0;
        int counterB=0;
       char[] items=skus.toCharArray();
-        for(int i=0;skus.length();i++){
+        for(char item:items) {
         	
             if (x.equals("A")){
               counterA++;
@@ -38,6 +38,7 @@ public class CheckoutSolution {
     }    
     
 }
+
 
 
 
