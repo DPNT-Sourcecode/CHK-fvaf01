@@ -37,8 +37,10 @@ public class CheckoutSolution {
             int numberOfGroupA = counterA/5;
             int numberRemainA =  counterA%5;
             counterA=counterA-numberRemainA;
-            int numberOfGroupA = counterA/3;
-            int numberRemainA =  counterA%3;
+            total=total+(numberOfGroupA*200);
+            numberOfGroupA = counterA/3;
+            numberRemainA =  counterA%3;
+            total=total+((numberOfGroupA*130)+(numberRemainA*50));
             int numberOfGroupB = counterB/2;
             int numberRemainB =  counterB%2;
             
@@ -49,5 +51,6 @@ public class CheckoutSolution {
     }    
     
 }
+
 
 
