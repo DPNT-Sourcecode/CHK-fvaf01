@@ -10,9 +10,8 @@ public class CheckoutSolution {
        int total = 0;
        int counterA=0;
        int counterB=0;
-        char[] items=skus.toCharArray();
-        for(char x:items) {
-        	
+       char[] items=skus.toCharArray();
+        for(char x:items) {   	
            if (x=='A'){
               counterA++;
             }else if (x=='B'){
@@ -38,6 +37,7 @@ public class CheckoutSolution {
     }    
     
 }
+
 
 
 
