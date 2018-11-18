@@ -46,7 +46,7 @@ public class CheckoutSolution {
            
           //E Calculation
             int numberOfGroupE = counterE/2;
-            int numberRemainE=  counterE%2;
+            //int numberRemainE=  counterE%2;
             total=total+(counterE*40);
             counterB=counterB-numberOfGroupE;
             
@@ -61,6 +61,7 @@ public class CheckoutSolution {
     }    
     
 }
+
 
 
 
