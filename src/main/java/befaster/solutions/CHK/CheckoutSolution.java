@@ -11,7 +11,7 @@ public class CheckoutSolution {
        int counterA=0;
        int counterB=0;
        int counterE=0;
-       int count=0;
+    
        
        char[] items=skus.toCharArray();
         for(char x:items) {   	
@@ -33,7 +33,10 @@ public class CheckoutSolution {
 	         }
         }
         
-            count=counterA;
+         
+            int numberOfGroupA = counterA/5;
+            int numberRemainA =  counterA%5;
+            counterA=counterA-numberRemainA;
             int numberOfGroupA = counterA/3;
             int numberRemainA =  counterA%3;
             int numberOfGroupB = counterB/2;
@@ -46,4 +49,5 @@ public class CheckoutSolution {
     }    
     
 }
+
 
