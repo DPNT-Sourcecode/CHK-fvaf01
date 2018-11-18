@@ -20,7 +20,9 @@ public class CheckoutSolution {
             }
             else if (x.equals("D")){
             total += 15;
-        }
+           }
+           
+            
             int numberOfGroupA = counterA/3;
             int numberRemainA =  counterA%3;
             int numberOfGroupB = counterB/2;
@@ -32,5 +34,3 @@ public class CheckoutSolution {
         
     }
 }
-
-
