@@ -10,6 +10,9 @@ public class CheckoutSolution {
        int total = 0;
        int counterA=0;
        int counterB=0;
+       int counterE=0;
+       int count=0;
+       
        char[] items=skus.toCharArray();
         for(char x:items) {   	
            if (x=='A'){
@@ -22,14 +25,20 @@ public class CheckoutSolution {
             else if (x=='D'){
             total += 15;
            }
+            else if (x=='E'){
+            	counterE++;
+               }
             else {
 	          return -1;
 	         }
         }
+        
+            count=counterA;
             int numberOfGroupA = counterA/3;
             int numberRemainA =  counterA%3;
             int numberOfGroupB = counterB/2;
             int numberRemainB =  counterB%2;
+            
             
             total=total+((numberOfGroupA*130)+(numberRemainA*50))+((numberOfGroupB*45)+(numberRemainB*30));
             return total;
@@ -37,3 +46,4 @@ public class CheckoutSolution {
     }    
     
 }
+
