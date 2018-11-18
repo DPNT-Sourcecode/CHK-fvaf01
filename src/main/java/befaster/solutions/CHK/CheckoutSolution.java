@@ -51,14 +51,15 @@ public class CheckoutSolution {
             counterB=counterB-numberOfGroupE;
             
           //B Calculation
-            
+            if(counterB>0) {
             int numberOfGroupB = counterB/2;
             int numberRemainB =  counterB%2;
             total=total+((numberOfGroupB*45)+(numberRemainB*30));
-            
+            }
             return total;
             
     }    
     
 }
+
 
