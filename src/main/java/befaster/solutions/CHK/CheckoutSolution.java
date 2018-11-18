@@ -65,11 +65,13 @@ public class CheckoutSolution {
             if(counterF>0) {
             int numberOfGroupF = counterF/2;
             int numberRemainF =  counterF%2;
-            total=total+((numberOfGroupF*10)+(numberRemainF*10));
-            return total;
+            total=total+((numberOfGroupF*10)+(numberRemainF*10));  
+            }
             
+            return total;
     }    
     
 }
+
 
 
