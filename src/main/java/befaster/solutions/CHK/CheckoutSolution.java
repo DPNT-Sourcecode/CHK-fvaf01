@@ -36,7 +36,7 @@ public class CheckoutSolution {
           //5A offer
             int numberOfGroupA = counterA/5;
             int numberRemainA =  counterA%5;
-            counterA=counterA-numberOfGroupA;
+            counterA=counterA-(numberOfGroupA*5);
             total=total+(numberOfGroupA*200);
             
           //3A offer
@@ -61,3 +61,4 @@ public class CheckoutSolution {
     }    
     
 }
+
