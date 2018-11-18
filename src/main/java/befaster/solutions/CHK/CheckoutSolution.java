@@ -5,7 +5,7 @@ import java.util.List;
 import befaster.runner.SolutionNotImplementedException;
 
 public class CheckoutSolution {
-    public Integer checkout(List<String> skus) {
+    public Integer checkout(String skus) {
         
        int total = 0;
        int counterA=0;
@@ -36,4 +36,5 @@ public class CheckoutSolution {
     }    
     
 }
+
 
