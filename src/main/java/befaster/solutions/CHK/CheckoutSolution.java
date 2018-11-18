@@ -45,11 +45,14 @@ public class CheckoutSolution {
             
             int numberOfGroupE = counterE/2;
             int numberRemainE=  counterE%2;
+            total=total+(counterE*40);
             
+            counterB=counterB-numberOfGroupE;
             
             int numberOfGroupB = counterB/2;
             int numberRemainB =  counterB%2;
             
+         
             
             total=total+((numberOfGroupB*45)+(numberRemainB*30));
             return total;
@@ -57,6 +60,7 @@ public class CheckoutSolution {
     }    
     
 }
+
 
 
 
