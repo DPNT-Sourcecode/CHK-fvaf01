@@ -38,19 +38,26 @@ public class CheckoutSolution {
             int numberRemainA =  counterA%5;
             counterA=counterA-numberRemainA;
             total=total+(numberOfGroupA*200);
+            
             numberOfGroupA = counterA/3;
             numberRemainA =  counterA%3;
             total=total+((numberOfGroupA*130)+(numberRemainA*50));
+            
+            int numberOfGroupE = counterE/2;
+            int numberRemainE=  counterE%2;
+            
+            
             int numberOfGroupB = counterB/2;
             int numberRemainB =  counterB%2;
             
             
-            total=total+((numberOfGroupA*130)+(numberRemainA*50))+((numberOfGroupB*45)+(numberRemainB*30));
+            total=total+((numberOfGroupB*45)+(numberRemainB*30));
             return total;
             
     }    
     
 }
+
 
 
 
