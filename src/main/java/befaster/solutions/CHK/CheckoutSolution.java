@@ -10,17 +10,17 @@ public class CheckoutSolution {
        int total = 0;
        int counterA=0;
        int counterB=0;
-      char[] items=skus.toCharArray();
-        for(char item:items) {
+        char[] items=skus.toCharArray();
+        for(char x:items) {
         	
-            if (x.equals("A")){
+           if (x=='A'){
               counterA++;
-            }else if (x.equals("B")){
+            }else if (x=='B'){
                 counterB++;
-            }else if (x.equals("C")){
+            }else if(x=='C'){
                 total += 20;
             }
-            else if (x.equals("D")){
+            else if (x=='D'){
             total += 15;
            }
             else {
@@ -38,6 +38,7 @@ public class CheckoutSolution {
     }    
     
 }
+
 
 
 
