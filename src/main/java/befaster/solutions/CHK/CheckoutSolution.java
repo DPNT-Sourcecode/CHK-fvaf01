@@ -65,8 +65,9 @@ public class CheckoutSolution {
        
             int numberOfGroupF = counterF/2;
             int numberRemainF =  counterF%2;
-            if(numberRemainF==1)
-           
+            if(numberRemainF==0)
+            total=total+(numberOfGroupF*10)+10;
+            else
             total=total+((numberOfGroupF*10)+(numberRemainF*10));  
             
             
@@ -74,3 +75,4 @@ public class CheckoutSolution {
     }    
     
 }
+
