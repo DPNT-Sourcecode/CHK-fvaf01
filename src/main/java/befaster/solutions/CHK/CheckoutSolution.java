@@ -48,7 +48,7 @@ public class CheckoutSolution {
 
 			}
 			
-			else if ('C'==k ) {
+			else if ('C'==k) {
 				total = total + 20;
 
 			}
@@ -224,4 +224,5 @@ public class CheckoutSolution {
 	}
 
 }
+
 
