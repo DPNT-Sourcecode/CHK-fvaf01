@@ -63,8 +63,8 @@ public class CheckoutSolution {
 
                 int numberOfGroupE = v / 2;
 				Integer Bvalue = items.get('B');
-				if(Bvalue!=null && Bvalue>1 )
-				total = total + (v * 40)-(numberOfGroupE*30);
+				if(Bvalue!=null && Bvalue>0 )
+				total = total + (v * 40)-((Bvalue-numberOfGroupE)*30);
 				else
 					total = total + (v * 40);
 			}
@@ -236,3 +236,4 @@ public class CheckoutSolution {
 }
     
 }
+
