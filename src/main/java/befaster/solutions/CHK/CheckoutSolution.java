@@ -28,8 +28,7 @@ public class CheckoutSolution {
      
      items.forEach((k,v)->{
     	
- 		System.out.println("Item : " + k + " Count : " + v);
- 		
+ 	
 			if ('A'==k) {
 
 				int numberOfGroupA = v / 5;
@@ -225,3 +224,4 @@ public class CheckoutSolution {
 	}
 
 }
+
