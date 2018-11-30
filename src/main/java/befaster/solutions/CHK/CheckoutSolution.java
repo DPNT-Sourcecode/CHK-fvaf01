@@ -180,7 +180,6 @@ public class CheckoutSolution {
 				if(numberRemainU==0 && numberOfGroupU>0 )
 					total=total+(numberOfGroupU*3*40);
 				else 
-					
 				total = total + (numberRemainU *40)+(numberOfGroupU*3*40);
 				
 
@@ -237,4 +236,5 @@ public class CheckoutSolution {
 }
     
 }
+
 
