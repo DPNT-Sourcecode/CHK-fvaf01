@@ -8,7 +8,7 @@ public class CheckoutSolution {
 	
 	private static int total=0;
 	
-    public Integer checkout(String skus) {
+    private static Integer checkout(String skus) {
     	
     
     HashMap<Character, Integer> items = new HashMap<Character, Integer>();
@@ -224,5 +224,6 @@ public class CheckoutSolution {
 	}
 
 }
+
 
 
