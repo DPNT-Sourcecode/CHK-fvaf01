@@ -6,7 +6,7 @@ import befaster.runner.SolutionNotImplementedException;
 
 public class CheckoutSolution {
 	
-	private static int total=0;
+	
 	
     public static Integer checkout(String skus) {
     	
@@ -27,7 +27,8 @@ public class CheckoutSolution {
 
      
      items.forEach((k,v)->{
-    	
+    	   
+    	 private static int total=0;
  	
 			if ('A'==k) {
 
@@ -224,3 +225,4 @@ public class CheckoutSolution {
 	}
 
 }
+
