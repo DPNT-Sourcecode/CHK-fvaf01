@@ -10,7 +10,7 @@ public class CheckoutSolution {
 	
     public Integer checkout(String skus) {
     	
-    if(skus.matches("[A-Z]")){ 
+    if(skus.matches("^[A-Z]*$")){ 
     
     HashMap<Character, Integer> items = new HashMap<Character, Integer>();
     
@@ -221,7 +221,7 @@ public class CheckoutSolution {
 
 		return total;
 
-	} else if(skus=="")
+	} else if(skus.equals(""))
 		
 	{
 		return 0;
@@ -235,5 +235,3 @@ public class CheckoutSolution {
 }
     
 }
-
-
