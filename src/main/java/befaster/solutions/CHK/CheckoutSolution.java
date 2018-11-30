@@ -6,11 +6,11 @@ import befaster.runner.SolutionNotImplementedException;
 
 public class CheckoutSolution {
 	
+	int total=0;
 	
-	
-    public static Integer checkout(String skus) {
+    public  Integer checkout(String skus) {
     	
-    	int total=0;
+    
     	
     HashMap<Character, Integer> items = new HashMap<Character, Integer>();
     
@@ -36,7 +36,7 @@ public class CheckoutSolution {
 				int numberOfGroupA = v / 5;
 				int numberRemainA = v % 5;
 				v = v - (numberOfGroupA * 5);
-				total = total + (numberOfGroupA * 200);
+				int total = total + (numberOfGroupA * 200);
 
 				numberOfGroupA = v / 3;
 				numberRemainA = v % 3;
@@ -46,17 +46,17 @@ public class CheckoutSolution {
 			else if ('B'==k) {	
 				int numberOfGroupB = v / 2;
 				int numberRemainB = v % 2;
-				total = total + ((numberOfGroupB * 45) + (numberRemainB * 30));
+				int total = total + ((numberOfGroupB * 45) + (numberRemainB * 30));
 
 			}
 			
 			else if ('C'==k) {
-				total = total + 20;
+				int total = total + 20;
 
 			}
 
 			else if ('D'==k) {
-				total = total + 15;
+				int total = total + 15;
 
 			}
 			
@@ -226,5 +226,6 @@ public class CheckoutSolution {
 	}
 
 }
+
 
 
