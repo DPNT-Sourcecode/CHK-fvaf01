@@ -213,11 +213,18 @@ public class CheckoutSolution {
 			else if ('Z'==k) {
 				total = total + 50;
 			}
+			else {
+				total=0;
+			}
 				
 		});
 
 		return total;
 
+	} else if(skus=="")
+		
+	{
+		return 0;
 	}
     
     else
@@ -228,3 +235,4 @@ public class CheckoutSolution {
 }
     
 }
+
