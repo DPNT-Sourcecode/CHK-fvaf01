@@ -217,7 +217,7 @@ public class CheckoutSolution {
 				total=0;
 			}
 				
-		});
+	});
 
 		return total;
 
@@ -235,4 +235,5 @@ public class CheckoutSolution {
 }
     
 }
+
 
