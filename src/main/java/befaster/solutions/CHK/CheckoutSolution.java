@@ -176,9 +176,9 @@ public class CheckoutSolution {
 			else if ('U'==k) {
 				
 				int numberOfGroupU = v / 3;
-				//int numberRemainU = v % 3;
-				//if(numberRemainU>0 && numberOfGroupU>0) 
-				  // total = total + (numberOfGroupU*3*40)-((numberRemainU-1)*40);
+				int numberRemainU = v % 3;
+				if(numberRemainU>1 && numberOfGroupU>0) 
+				  total = total + (numberOfGroupU*3*40)-((numberRemainU-1)*40);
 				//else
 				//total = total + (v * 40);
 				//total = total +(numberOfGroupU*3*40)+(numberRemainU*40);
@@ -238,3 +238,4 @@ public class CheckoutSolution {
 }
     
 }
+
