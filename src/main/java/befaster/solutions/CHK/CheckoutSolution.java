@@ -213,11 +213,7 @@ public class CheckoutSolution {
 			else if ('Z'==k) {
 				total = total + 50;
 			}
-			
-			else {
-				total=-1;
-			}
-
+				
 		});
 
 		return total;
@@ -232,5 +228,6 @@ public class CheckoutSolution {
 }
     
 }
+
 
 
