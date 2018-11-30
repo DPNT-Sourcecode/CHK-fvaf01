@@ -11,7 +11,6 @@ public class CheckoutSolution {
     public Integer checkout(String skus) {
     	
     	
-    	
     HashMap<Character, Integer> items = new HashMap<Character, Integer>();
     
     char[] strArray = skus.toCharArray();
@@ -25,12 +24,11 @@ public class CheckoutSolution {
             }
        }
      
-
+     total=0;
      
      items.forEach((k,v)->{
     	   
-    	     total=0;
- 	
+  	
 			if ('A'==k) {
 
 				int numberOfGroupA = v / 5;
@@ -226,4 +224,5 @@ public class CheckoutSolution {
 	}
 
 }
+
 
