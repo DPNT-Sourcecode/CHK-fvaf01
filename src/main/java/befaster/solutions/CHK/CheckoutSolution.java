@@ -10,7 +10,8 @@ public class CheckoutSolution {
 	
     public static Integer checkout(String skus) {
     	
-    
+    	int total=0;
+    	
     HashMap<Character, Integer> items = new HashMap<Character, Integer>();
     
     char[] strArray = skus.toCharArray();
@@ -28,7 +29,7 @@ public class CheckoutSolution {
      
      items.forEach((k,v)->{
     	   
-    	 private static int total=0;
+    	     
  	
 			if ('A'==k) {
 
@@ -225,4 +226,5 @@ public class CheckoutSolution {
 	}
 
 }
+
 
