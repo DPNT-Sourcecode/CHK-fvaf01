@@ -6,11 +6,11 @@ import befaster.runner.SolutionNotImplementedException;
 
 public class CheckoutSolution {
 	
-	
+	int total=0;
 	
     public Integer checkout(String skus) {
     	
-    	int total;
+    	
     	
     HashMap<Character, Integer> items = new HashMap<Character, Integer>();
     
@@ -226,6 +226,7 @@ public class CheckoutSolution {
 	}
 
 }
+
 
 
 
