@@ -233,6 +233,3 @@ public class CheckoutSolution {
 }
     
 }
-
-
-
