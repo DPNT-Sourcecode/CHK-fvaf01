@@ -181,7 +181,7 @@ public class CheckoutSolution {
 				   total = total + (numberOfGroupU*3*40)-((numberRemainU-1)*40);
 				else
 				//total = total + (v * 40);
-				total = total +(numberOfGroupU*3*40);
+				total = total +(numberOfGroupU*3*40)+(numberRemainU*40);
 				
 
 			}
@@ -237,3 +237,4 @@ public class CheckoutSolution {
 }
     
 }
+
