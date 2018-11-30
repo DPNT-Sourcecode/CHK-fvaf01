@@ -10,7 +10,8 @@ public class CheckoutSolution {
 	
     public Integer checkout(String skus) {
     	
-    	
+    if(skus.matches("[A-Z]")){ 
+    
     HashMap<Character, Integer> items = new HashMap<Character, Integer>();
     
     char[] strArray = skus.toCharArray();
@@ -222,5 +223,11 @@ public class CheckoutSolution {
 		return total;
 
 	}
+    
+    else
+    {
+    	return -1;
+    }
 
 }
+
