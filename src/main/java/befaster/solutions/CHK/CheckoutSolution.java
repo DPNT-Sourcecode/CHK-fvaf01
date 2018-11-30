@@ -182,7 +182,7 @@ public class CheckoutSolution {
 				//else
 				//total = total + (v * 40);
 				//total = total +(numberOfGroupU*3*40)+(numberRemainU*40);
-				total = total + (v * 50)-(numberOfGroupR*30);
+				total = total + (v * 40)-(numberOfGroupU*40);
 				
 
 			}
@@ -238,5 +238,3 @@ public class CheckoutSolution {
 }
     
 }
-
-
