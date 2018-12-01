@@ -187,13 +187,37 @@ public class CheckoutSolution {
 			}
 
 			else if (('S'==k) || ('T'==k) || ('X'==k) || ('Y'==k)|| ('Z'==k)){
-				Integer Svalue = items.get('S');
+				Integer Svalue = items.get('S');	
 				Integer Tvalue = items.get('T');
 				Integer Xvalue = items.get('X');
 				Integer Yvalue = items.get('Y');
 				Integer Zvalue = items.get('Z');
-				total = total +(v* 30);
-			}
+				Integer sum = Svalue + Tvalue + Xvalue + Yvalue + Zvalue;
+				int numberOfGroupsum = sum / 3;
+				int numberRemainsum = sum % 3;
+				if ( sum > 2 ) {
+					if (numberRemainsum== 0 && numberOfGroupsum > 0 ) 
+						total = total +(numberOfGroupsum* 45);
+					else if (numberRemainsum== 1 && numberOfGroupsum > 0 && ('Z'==k))
+						total = total +(numberOfGroupsum* 45)+ 21;
+					
+					
+					else if(numberRemainsum== 2 && numberOfGroupsum > 0)
+						total = total +(numberOfGroupsum* 45)+ 20; 
+					
+				}			
+				else if ('S'==k) {
+			    	total = total +(v* 20);
+			    }else if ('T'==k) {
+			    	total = total +(v* 20);
+			    }else if ('X'==k) {
+			    	total = total +(v* 17);
+			    }else if ('Y'==k) {
+			    	total = total +(v* 20);
+			    }else if ('Z'==k) {
+			    	total = total +(v* 21);
+			    }
+			    }
 
 			/*else if ('T'==k) {
 				total = total +(v* 20);
@@ -263,3 +287,4 @@ public class CheckoutSolution {
 }
     
 }
+
