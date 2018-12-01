@@ -140,6 +140,7 @@ public class CheckoutSolution {
 				{
 			     int numberOfGroupN = Nvalue / 3;
 				 v=v-numberOfGroupN;
+				 items.put('M',v);
 				}
 				total = total +(v*15);
 			}
@@ -175,7 +176,8 @@ public class CheckoutSolution {
 				if(Rvalue!=null && Rvalue>0 )
 				{
 			    int numberOfGroupR = Rvalue / 3;
-				 v=v-numberOfGroupR;		 
+				 v=v-numberOfGroupR;
+				 items.put('Q',v);
 				}
 				int numberOfGroupQ = v / 3;
 				int numberRemainQ = v % 3;
@@ -264,4 +266,5 @@ public class CheckoutSolution {
 }
     
 }
+
 
