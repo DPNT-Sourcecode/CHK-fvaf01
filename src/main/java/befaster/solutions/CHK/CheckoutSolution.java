@@ -187,11 +187,6 @@ public class CheckoutSolution {
 
 			else if ('R'==k) {
 				
-				int numberOfGroupR = v / 3;
-				Integer Qvalue = items.get('Q');
-				if(Qvalue!=null && Qvalue>0 && numberOfGroupR>0 )
-				total = total + (v * 50)-((Qvalue-numberOfGroupR)*30);
-				else
 				total = total + (v * 50);
 			}
 
@@ -267,3 +262,4 @@ public class CheckoutSolution {
 }
     
 }
+
