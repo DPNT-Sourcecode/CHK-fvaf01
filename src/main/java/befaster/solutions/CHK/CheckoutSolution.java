@@ -187,12 +187,13 @@ public class CheckoutSolution {
 			}
 
 			else if (('S'==k) || ('T'==k) || ('X'==k) || ('Y'==k)|| ('Z'==k)){
+				Integer Svalue = items.get('S');
 				total = total +(v* 30);
 			}
 
-			//else if ('T'==k) {
-			//	total = total +(v* 20);
-			//}
+			/*else if ('T'==k) {
+				total = total +(v* 20);
+			}*/
 
             else if ('U'==k) {
 				
@@ -258,4 +259,5 @@ public class CheckoutSolution {
 }
     
 }
+
 
