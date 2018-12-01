@@ -200,8 +200,10 @@ public class CheckoutSolution {
 						total = total +(numberOfGroupsum* 45);
 					else if (numberRemainsum== 1 && numberOfGroupsum > 0 && ('Z'==k))
 						total = total +(numberOfGroupsum* 45)+ 21;
-					
-					
+					else if (numberRemainsum== 1 && numberOfGroupsum > 0 && (('Y'==k)|| ('S'==k)||('T'==k)))
+						total = total +(numberOfGroupsum* 45)+ 20;
+					else if (numberRemainsum== 1 && numberOfGroupsum > 0 && ('X'==k))
+						total = total +(numberOfGroupsum* 45)+ 17;
 					else if(numberRemainsum== 2 && numberOfGroupsum > 0)
 						total = total +(numberOfGroupsum* 45)+ 20; 
 					
@@ -287,4 +289,3 @@ public class CheckoutSolution {
 }
     
 }
-
