@@ -210,7 +210,7 @@ public class CheckoutSolution {
 				}			
 				else
 				{	
-					if (('S'==k) || ('T'==k) || ('Y'==k)) {
+				if (('S'==k) || ('T'==k) || ('Y'==k)) {
 			    	total = total +(v* 20);
 			    }else if ('X'==k) {
 			    	total = total +(v* 17);
@@ -289,4 +289,5 @@ public class CheckoutSolution {
 }
     
 }
+
 
