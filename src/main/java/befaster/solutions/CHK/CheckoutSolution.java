@@ -73,7 +73,7 @@ public class CheckoutSolution {
                 int numberOfGroupE = v / 2;
 				Integer Bvalue = items.get('B');
 				
-				if(Bvalue!=null && Bvalue>0 )
+				if(Bvalue!=null && Bvalue>0 && numberOfGroupE > 0 )
 				total = total + (v * 40)-((Bvalue-numberOfGroupE)*30);
 				else
 					total = total + (v * 40);
@@ -148,7 +148,7 @@ public class CheckoutSolution {
 				
 				int numberOfGroupN = v / 3;
 				Integer Mvalue = items.get('M');
-				if(Mvalue!=null && Mvalue>0 )
+				if(Mvalue!=null && Mvalue>0 && numberOfGroupN>0 )
 				total = total + (v * 40)-((Mvalue-numberOfGroupN)*15);
 				else
 			    total = total + (v * 40);	
@@ -186,7 +186,7 @@ public class CheckoutSolution {
 				
 				int numberOfGroupR = v / 3;
 				Integer Qvalue = items.get('Q');
-				if(Qvalue!=null && Qvalue>0 )
+				if(Qvalue!=null && Qvalue>0 && numberOfGroupR>0 )
 				total = total + (v * 50)-((Qvalue-numberOfGroupR)*30);
 				else
 				total = total + (v * 50);
@@ -263,5 +263,6 @@ public class CheckoutSolution {
 }
     
 }
+
 
 
