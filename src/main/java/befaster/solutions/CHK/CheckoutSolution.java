@@ -44,8 +44,11 @@ public class CheckoutSolution {
 
 			else if ('B'==k) {	
 				Integer Evalue = items.get('E');
+				if(Evalue!=null && Evalue>0 )
+				{
 				 int numberOfGroupE = Evalue / 2;
 				 v=v-numberOfGroupE;
+				}
 				 int numberOfGroupB = v / 2;
 				 
 				 int numberRemainB = v % 2;
@@ -132,8 +135,11 @@ public class CheckoutSolution {
 				
 				
 				Integer Nvalue = items.get('N');
+				if(Nvalue!=null && Nvalue>0 )
+				{
 			     int numberOfGroupN = Nvalue / 3;
-				 v=v-numberOfGroupN;	
+				 v=v-numberOfGroupN;
+				}
 				total = total +(v*15);
 			}
 
@@ -254,3 +260,4 @@ public class CheckoutSolution {
 }
     
 }
+
