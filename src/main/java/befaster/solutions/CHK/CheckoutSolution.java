@@ -119,7 +119,7 @@ public class CheckoutSolution {
 				
 				int numberOfGroupK = v / 2;
 				int numberRemainK = v % 2;
-				total = total + ((numberOfGroupK * 150) + (numberRemainK * 80));
+				total = total + ((numberOfGroupK * 120) + (numberRemainK * 70));
 
 
 			}
@@ -142,13 +142,6 @@ public class CheckoutSolution {
 			}
 
 			else if ('N'==k) {
-				
-				
-				int numberOfGroupN = v / 3;
-				Integer Mvalue = items.get('M');
-				if(Mvalue!=null && Mvalue>0 && numberOfGroupN>0 )
-				total = total + (v * 40)-((Mvalue-numberOfGroupN)*15);
-				else
 			    total = total + (v * 40);	
 				
 			}
@@ -198,24 +191,24 @@ public class CheckoutSolution {
 				if ( sum > 2 ) {
 					if (numberRemainsum== 0 && numberOfGroupsum > 0 ) 
 						total = total +(numberOfGroupsum* 45);
-					else if (numberRemainsum== 1 && numberOfGroupsum > 0 && ('Z'==k))
+					else if (numberRemainsum== 1 && numberOfGroupsum > 0 && (Zvalue > 0))
 						total = total +(numberOfGroupsum* 45)+ 21;
-					else if (numberRemainsum== 1 && numberOfGroupsum > 0 && (('Y'==k)|| ('S'==k)||('T'==k)))
+					else if (numberRemainsum== 1 && numberOfGroupsum > 0 && ((Yvalue > 0)|| (Svalue > 0)||(Tvalue > 0)))
 						total = total +(numberOfGroupsum* 45)+ 20;
-					else if (numberRemainsum== 1 && numberOfGroupsum > 0 && ('X'==k))
+					else if (numberRemainsum== 1 && numberOfGroupsum > 0 && (Xvalue > 0))
 						total = total +(numberOfGroupsum* 45)+ 17;
-					else if(numberRemainsum== 2 && numberOfGroupsum > 0)
-						total = total +(numberOfGroupsum* 45)+ 20; 
-					
+					else if (numberRemainsum== 2 && numberOfGroupsum > 0 && (Zvalue > 1))
+						total = total +(numberOfGroupsum* 45)+ (2*21);
+					else if (numberRemainsum== 2 && numberOfGroupsum > 0 && ((Yvalue > 1)||(Svalue > 1)||(Tvalue > 1)))
+						total = total +(numberOfGroupsum* 45)+ 20;
+					else if (numberRemainsum== 2 && numberOfGroupsum > 0 && (Xvalue > 1))
+						total = total +(numberOfGroupsum* 45)+ 17;
+									
 				}			
-				else if ('S'==k) {
-			    	total = total +(v* 20);
-			    }else if ('T'==k) {
+				else if (('S'==k) || ('T'==k) || ('Y'==k)) {
 			    	total = total +(v* 20);
 			    }else if ('X'==k) {
 			    	total = total +(v* 17);
-			    }else if ('Y'==k) {
-			    	total = total +(v* 20);
 			    }else if ('Z'==k) {
 			    	total = total +(v* 21);
 			    }
@@ -289,3 +282,4 @@ public class CheckoutSolution {
 }
     
 }
+
