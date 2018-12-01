@@ -220,6 +220,7 @@ public class CheckoutSolution {
 				int numberOfGroupV = v / 3;
 				int numberRemainV = v % 3;
 				v = v - (numberOfGroupV * 3);
+				items.put('V',v);
 				total = total + (numberOfGroupV * 130);
 
 				numberOfGroupV = v / 2;
@@ -266,5 +267,3 @@ public class CheckoutSolution {
 }
     
 }
-
-
