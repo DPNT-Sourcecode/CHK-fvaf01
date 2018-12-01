@@ -180,14 +180,28 @@ public class CheckoutSolution {
 			}
 
 			else if (('S'==k) || ('T'==k) || ('X'==k) || ('Y'==k)|| ('Z'==k)){
-				Integer Svalue = items.get('S');	
+				int sum = 0;
+				Integer Svalue = items.get('S');
+				if(Svalue!=null) {
+				sum = sum +Svalue;
+				items.put('S',0);
+				}
 				Integer Tvalue = items.get('T');
+				if(Tvalue!=null) {
+				sum = sum +Tvalue;
+				items.put('T',0);}
 				Integer Xvalue = items.get('X');
+				if(Xvalue!=null) {
+				sum = sum +Xvalue;
+				items.put('X',0); }
 				Integer Yvalue = items.get('Y');
+				if(Yvalue!=null) {
+				sum = sum +Yvalue;
+				items.put('Y',0);}
 				Integer Zvalue = items.get('Z');
-				if(Svalue!=null &&Tvalue!=null &&Xvalue!=null &&Yvalue!=null && Zvalue!=null)
-				{
-				int sum = Svalue + Tvalue + Xvalue + Yvalue + Zvalue;
+				if(Zvalue!=null) {
+				sum = sum +Zvalue;
+				items.put('Z',0);}
 				
 				int numberOfGroupsum = sum / 3;
 				int numberRemainsum = sum % 3;
@@ -219,8 +233,8 @@ public class CheckoutSolution {
 			    }
 				}
 			    }
+     
 			
-			}
 			/*else if ('T'==k) {
 				total = total +(v* 20);
 			}*/
@@ -289,3 +303,4 @@ public class CheckoutSolution {
 }
     
 }
+
