@@ -192,17 +192,17 @@ public class CheckoutSolution {
 				if (sum > 2 ) {
 					if (numberRemainsum== 0 && numberOfGroupsum > 0 ) 
 						total = total +(numberOfGroupsum* 45);
-					else if (numberRemainsum== 1 && numberOfGroupsum > 0 && (Zvalue!=null && Zvalue > 0))
+					else if (numberRemainsum== 1 && numberOfGroupsum > 0 && (Zvalue!=null && Zvalue > 1))
 						total = total +(numberOfGroupsum* 45)+ 21;
-					else if (numberRemainsum== 1 && numberOfGroupsum > 0 && ((Yvalue!=null && Yvalue > 0)|| (Svalue!=null && Svalue > 0)||(Tvalue!=null && Tvalue > 0)))
+					else if (numberRemainsum== 1 && numberOfGroupsum > 0 && ((Yvalue!=null && Yvalue > 1)|| (Svalue!=null && Svalue > 1)||(Tvalue!=null && Tvalue > 1)))
 						total = total +(numberOfGroupsum* 45)+ 20;
-					else if (numberRemainsum== 1 && numberOfGroupsum > 0 && (Xvalue!=null && Xvalue > 0))
+					else if (numberRemainsum== 1 && numberOfGroupsum > 0 && (Xvalue!=null && Xvalue > 1))
 						total = total +(numberOfGroupsum* 45)+ 17;
-					else if (numberRemainsum== 2 && numberOfGroupsum > 0 && (Zvalue!=null && Zvalue > 1))
+					else if (numberRemainsum== 2 && numberOfGroupsum > 0 && (Zvalue!=null && Zvalue > 2))
 						total = total +(numberOfGroupsum* 45)+ (2*21);
-					else if (numberRemainsum== 2 && numberOfGroupsum > 0 && ((Yvalue > 1)||(Svalue > 1)||(Tvalue > 1)))
+					else if (numberRemainsum== 2 && numberOfGroupsum > 0 && ((Yvalue!=null && Yvalue > 2)||(Svalue!=null && Svalue > 2)||(Tvalue!=null && Tvalue > 2)))
 						total = total +(numberOfGroupsum* 45)+(2* 20);
-					else if (numberRemainsum== 2 && numberOfGroupsum > 0 && (Xvalue > 1))
+					else if (numberRemainsum== 2 && numberOfGroupsum > 0 && (Xvalue!=null && Xvalue > 2))
 						total = total +(numberOfGroupsum* 45)+(2* 17);
 									
 				}			
@@ -284,6 +284,7 @@ public class CheckoutSolution {
 }
     
 }
+
 
 
 
