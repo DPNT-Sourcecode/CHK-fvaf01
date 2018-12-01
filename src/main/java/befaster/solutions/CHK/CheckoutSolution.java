@@ -35,6 +35,7 @@ public class CheckoutSolution {
 				int numberOfGroupA = v / 5;
 				int numberRemainA = v % 5;
 				v = v - (numberOfGroupA * 5);
+				items.put('A',v);
 				total = total + (numberOfGroupA * 200);
 
 				numberOfGroupA = v / 3;
@@ -71,13 +72,7 @@ public class CheckoutSolution {
 			
 			else if ('E'==k) {
 
-                int numberOfGroupE = v / 2;
-				Integer Bvalue = items.get('B');
-				
-				if(Bvalue!=null && Bvalue>0 && numberOfGroupE > 0 )
-				total = total + (v * 40)-((Bvalue-numberOfGroupE)*30);
-				else
-					total = total + (v * 40);
+                total = total + (v * 40);
 			}
 
 			else if ('F'==k) {
@@ -102,6 +97,7 @@ public class CheckoutSolution {
 				int numberOfGroupH = v / 10;
 				int numberRemainH = v % 10;
 				v = v - (numberOfGroupH * 10);
+				items.put('H',v);
 				total = total + (numberOfGroupH * 80);
 
 				numberOfGroupH = v / 5;
@@ -262,3 +258,4 @@ public class CheckoutSolution {
 }
     
 }
+
