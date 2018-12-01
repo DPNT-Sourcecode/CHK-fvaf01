@@ -43,19 +43,25 @@ public class CheckoutSolution {
 			}
 
 			else if ('B'==k) {	
-				int numberOfGroupB = v / 2;
-				int numberRemainB = v % 2;
-			    total = total + ((numberOfGroupB * 45) + (numberRemainB * 30));
+				Integer Evalue = items.get('E');
+				 int numberOfGroupE = Evalue / 2;
+				 v=v-numberOfGroupE;
+				 int numberOfGroupB = v / 2;
+				 
+				 int numberRemainB = v % 2;
+				
+				total = total + ((numberOfGroupB * 45) + (numberRemainB * 30));
 
 			}
+
 			
 			else if ('C'==k) {
-				total = total + 20;
+				total = total +(v*20);
 
 			}
 
 			else if ('D'==k) {
-				total = total + 15;
+				total = total +(v*15);
 
 			}
 			
@@ -63,6 +69,7 @@ public class CheckoutSolution {
 
                 int numberOfGroupE = v / 2;
 				Integer Bvalue = items.get('B');
+				
 				if(Bvalue!=null && Bvalue>0 )
 				total = total + (v * 40)-((Bvalue-numberOfGroupE)*30);
 				else
@@ -81,7 +88,7 @@ public class CheckoutSolution {
 			}
 
 			else if ('G'==k) {
-				total = total + 20;
+				total = total +(v* 20);
 
 			}
 
@@ -101,11 +108,11 @@ public class CheckoutSolution {
 			}
 
 			else if ('I'==k) {
-				total = total + 35;
+				total = total +(v*35);
 			}
 
 			else if ('J'==k) {
-				total = total + 60;
+				total = total +(v*60);
 			}
 
 			else if ('K'==k) {
@@ -118,25 +125,32 @@ public class CheckoutSolution {
 			}
 
 			else if ('L'==k) {
-				total = total + 90;
+				total = total +(v*90);
 			}
 
 			else if ('M'==k) {
-				total = total + 15;
+				
+				
+				Integer Nvalue = items.get('N');
+			     int numberOfGroupN = Nvalue / 3;
+				 v=v-numberOfGroupN;	
+				total = total +(v*15);
 			}
 
 			else if ('N'==k) {
+				
+				
 				int numberOfGroupN = v / 3;
 				Integer Mvalue = items.get('M');
 				if(Mvalue!=null && Mvalue>0 )
-				total = total + (v * 40)-(numberOfGroupN*15);
+				total = total + (v * 40)-((Mvalue-numberOfGroupN)*15);
 				else
 			    total = total + (v * 40);	
 				
 			}
 
 			else if ('O'==k) {
-				total = total + 10;
+				total = total +(v*10);
 			}
 
 			else if ('P'==k) {
@@ -149,10 +163,14 @@ public class CheckoutSolution {
 			}
 
 			else if ('Q'==k) {
+				
+				Integer Rvalue = items.get('R');
+			    int numberOfGroupR = Rvalue / 3;
+				 v=v-numberOfGroupR;
 				int numberOfGroupQ = v / 3;
 				int numberRemainQ = v % 3;
 				total = total + ((numberOfGroupQ * 80) + (numberRemainQ * 30));
-
+				
 			}
 
 			else if ('R'==k) {
@@ -160,17 +178,17 @@ public class CheckoutSolution {
 				int numberOfGroupR = v / 3;
 				Integer Qvalue = items.get('Q');
 				if(Qvalue!=null && Qvalue>0 )
-				total = total + (v * 50)-(numberOfGroupR*30);
+				total = total + (v * 50)-((Qvalue-numberOfGroupR)*30);
 				else
 				total = total + (v * 50);
 			}
 
 			else if ('S'==k) {
-				total = total + 30;
+				total = total +(v* 30);
 			}
 
 			else if ('T'==k) {
-				total = total + 20;
+				total = total +(v* 20);
 			}
 
             else if ('U'==k) {
@@ -199,20 +217,20 @@ public class CheckoutSolution {
 			}
 
 			else if ('W'==k) {
-				total = total + 20;
+				total = total +(v* 20);
 
 			}
 
 			else if ('X'==k) {
-				total = total + 90;
+				total = total +(v* 90);
 			}
 
 			else if ('Y'==k) {
-				total = total + 10;
+				total = total +(v* 10);
 			}
 
 			else if ('Z'==k) {
-				total = total + 50;
+				total = total +(v* 50);
 			}
 			else {
 				total=0;
