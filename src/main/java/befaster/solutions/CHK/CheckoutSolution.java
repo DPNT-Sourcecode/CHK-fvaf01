@@ -188,7 +188,7 @@ public class CheckoutSolution {
 				Integer sum = Svalue + Tvalue + Xvalue + Yvalue + Zvalue;
 				int numberOfGroupsum = sum / 3;
 				int numberRemainsum = sum % 3;
-				if ( sum > 2 ) {
+				if (sum!=null && sum > 2 ) {
 					if (numberRemainsum== 0 && numberOfGroupsum > 0 ) 
 						total = total +(numberOfGroupsum* 45);
 					else if (numberRemainsum== 1 && numberOfGroupsum > 0 && (Zvalue > 0))
@@ -282,4 +282,5 @@ public class CheckoutSolution {
 }
     
 }
+
 
