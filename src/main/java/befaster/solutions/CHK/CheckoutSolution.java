@@ -208,28 +208,29 @@ public class CheckoutSolution {
 				if (sum > 2 ) {
 					if (numberRemainsum== 0 && numberOfGroupsum > 0 ) 
 						total = total +(numberOfGroupsum* 45);
-					else if (numberRemainsum== 1 && numberOfGroupsum > 0 && ( Xvalue > 0))
+					else if (numberRemainsum== 1 && numberOfGroupsum > 0 && ( (Xvalue!=null) && Xvalue > 0))
 						total = total +(numberOfGroupsum* 45)+ 17;
-					else if (numberRemainsum== 1 && numberOfGroupsum > 0 && ((Yvalue > 0)|| ( Svalue > 0)||(Tvalue > 0)))
+					else if (numberRemainsum== 1 && numberOfGroupsum > 0 && ((Yvalue!=null) && Yvalue > 0)|| ((Svalue!=null) && Svalue > 0)||( (Tvalue!=null) && Tvalue > 0))
 						total = total +(numberOfGroupsum* 45)+ 20;
-					else if (numberRemainsum== 1 && numberOfGroupsum > 0 && (Zvalue > 0))
+					else if (numberRemainsum== 1 && numberOfGroupsum > 0 && ((Zvalue!=null) &&Zvalue > 0))
 						total = total +(numberOfGroupsum* 45)+ 21;
-					else if (numberRemainsum== 2 && numberOfGroupsum > 0 && (Xvalue > 1))
+					else if (numberRemainsum== 2 && numberOfGroupsum > 0 && ((Xvalue!=null) && Xvalue > 1))
 						total = total +(numberOfGroupsum* 45)+(2* 17);
-					else if (numberRemainsum== 2 && numberOfGroupsum > 0 && (( Yvalue > 1)||(Svalue > 1)||(Tvalue > 1)))
+					else if (numberRemainsum== 2 && numberOfGroupsum > 0 && ((Yvalue!=null) && ( Yvalue > 1)||(Svalue!=null) && (Svalue > 1)||(Tvalue!=null) &&(Tvalue > 1)))
 						total = total +(numberOfGroupsum* 45)+(2* 20);
-					else if (numberRemainsum== 2 && numberOfGroupsum > 0 && ( Zvalue > 1))
+					else if (numberRemainsum== 2 && numberOfGroupsum > 0 && ( (Zvalue!=null) && Zvalue > 1))
 						total = total +(numberOfGroupsum* 45)+ (2*21);
+										
 									
 				}			
 				else
 				{	
 				if (('S'==k) || ('T'==k) || ('Y'==k)) {
-			    	total = total +(v* 20);
+			    	total = total +(sum* 20);
 			    }else if ('X'==k) {
-			    	total = total +(v* 17);
+			    	total = total +(sum* 17);
 			    }else if ('Z'==k) {
-			    	total = total +(v* 21);
+			    	total = total +(sum* 21);
 			    }
 				}
 			    }
@@ -303,3 +304,4 @@ public class CheckoutSolution {
 }
     
 }
+
