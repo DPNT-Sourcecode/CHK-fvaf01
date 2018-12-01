@@ -48,6 +48,7 @@ public class CheckoutSolution {
 				{
 				 int numberOfGroupE = Evalue / 2;
 				 v=v-numberOfGroupE;
+				 items.put('B',v);
 				}
 				 int numberOfGroupB = v / 2;
 				 
@@ -263,3 +264,4 @@ public class CheckoutSolution {
 }
     
 }
+
