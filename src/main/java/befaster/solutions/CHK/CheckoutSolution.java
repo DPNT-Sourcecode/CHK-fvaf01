@@ -185,6 +185,8 @@ public class CheckoutSolution {
 				Integer Xvalue = items.get('X');
 				Integer Yvalue = items.get('Y');
 				Integer Zvalue = items.get('Z');
+				if(Svalue!=null && Tvalue!=null && Xvalue!=null && Yvalue && Zvalue!=null)
+				{
 				int sum = Svalue + Tvalue + Xvalue + Yvalue + Zvalue;
 				
 				int numberOfGroupsum = sum / 3;
@@ -284,6 +286,7 @@ public class CheckoutSolution {
 }
     
 }
+
 
 
 
