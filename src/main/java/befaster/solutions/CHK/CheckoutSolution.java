@@ -185,14 +185,14 @@ public class CheckoutSolution {
 				Integer Xvalue = items.get('X');
 				Integer Yvalue = items.get('Y');
 				Integer Zvalue = items.get('Z');
-				Integer sum = Svalue + Tvalue + Xvalue + Yvalue + Zvalue;
-				if(sum!=null) {
+				int sum = Svalue + Tvalue + Xvalue + Yvalue + Zvalue;
+				
 				int numberOfGroupsum = sum / 3;
 				int numberRemainsum = sum % 3;
 				if (sum > 2 ) {
 					if (numberRemainsum== 0 && numberOfGroupsum > 0 ) 
 						total = total +(numberOfGroupsum* 45);
-					else if (numberRemainsum== 1 && numberOfGroupsum > 0 && (Zvalue > 0))
+					else if (numberRemainsum== 1 && numberOfGroupsum > 0 && (Zvalue!=null && Zvalue > 0))
 						total = total +(numberOfGroupsum* 45)+ 21;
 					else if (numberRemainsum== 1 && numberOfGroupsum > 0 && ((Yvalue > 0)|| (Svalue > 0)||(Tvalue > 0)))
 						total = total +(numberOfGroupsum* 45)+ 20;
@@ -214,7 +214,7 @@ public class CheckoutSolution {
 			    	total = total +(v* 21);
 			    }
 			    }
-			}
+			
 
 			/*else if ('T'==k) {
 				total = total +(v* 20);
@@ -284,4 +284,5 @@ public class CheckoutSolution {
 }
     
 }
+
 
