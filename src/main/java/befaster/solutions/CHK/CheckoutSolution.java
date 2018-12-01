@@ -186,13 +186,13 @@ public class CheckoutSolution {
 				total = total + (v * 50);
 			}
 
-			else if ('S'==k) {
+			else if (('S'==k) || ('T'==k) || ('X'==k) || ('Y'==k)|| ('Z'==k)){
 				total = total +(v* 30);
 			}
 
-			else if ('T'==k) {
-				total = total +(v* 20);
-			}
+			//else if ('T'==k) {
+			//	total = total +(v* 20);
+			//}
 
             else if ('U'==k) {
 				
@@ -225,8 +225,8 @@ public class CheckoutSolution {
 
 			}
 
-			else if ('X'==k) {
-				total = total +(v* 90);
+			/*else if ('X'==k) {
+			total = total +(v* 90);
 			}
 
 			else if ('Y'==k) {
@@ -235,7 +235,7 @@ public class CheckoutSolution {
 
 			else if ('Z'==k) {
 				total = total +(v* 50);
-			}
+			}*/
 			else {
 				total=0;
 			}
@@ -258,3 +258,4 @@ public class CheckoutSolution {
 }
     
 }
+
