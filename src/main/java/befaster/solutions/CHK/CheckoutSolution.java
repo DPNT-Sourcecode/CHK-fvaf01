@@ -185,7 +185,7 @@ public class CheckoutSolution {
 				Integer Xvalue = items.get('X');
 				Integer Yvalue = items.get('Y');
 				Integer Zvalue = items.get('Z');
-				if(Svalue!=null && Tvalue!=null && Xvalue!=null && Yvalue && Zvalue!=null)
+				if(Svalue!=null &&Tvalue!=null &&Xvalue!=null &&Yvalue!=null && Zvalue!=null)
 				{
 				int sum = Svalue + Tvalue + Xvalue + Yvalue + Zvalue;
 				
@@ -286,6 +286,7 @@ public class CheckoutSolution {
 }
     
 }
+
 
 
 
