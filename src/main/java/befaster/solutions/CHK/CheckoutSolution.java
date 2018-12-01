@@ -208,13 +208,16 @@ public class CheckoutSolution {
 						total = total +(numberOfGroupsum* 45)+(2* 17);
 									
 				}			
-				else if (('S'==k) || ('T'==k) || ('Y'==k)) {
+				else
+				{	
+					if (('S'==k) || ('T'==k) || ('Y'==k)) {
 			    	total = total +(v* 20);
 			    }else if ('X'==k) {
 			    	total = total +(v* 17);
 			    }else if ('Z'==k) {
 			    	total = total +(v* 21);
 			    }
+				}
 			    }
 			
 			}
@@ -264,9 +267,9 @@ public class CheckoutSolution {
 			else if ('Z'==k) {
 				total = total +(v* 50);
 			}*/
-			else {
+			/*else {
 				total=0;
-			}
+			}*/
 				
 	});
 
@@ -286,3 +289,4 @@ public class CheckoutSolution {
 }
     
 }
+
