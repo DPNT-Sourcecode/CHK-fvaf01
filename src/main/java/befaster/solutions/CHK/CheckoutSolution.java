@@ -206,7 +206,7 @@ public class CheckoutSolution {
 				int numberOfGroupsum = sum / 3;
 				int numberRemainsum = sum % 3;
 				if (sum > 2 ) {
-					if (numberRemainsum== 0 && numberOfGroupsum > 0 ) 
+					if (numberRemainsum== 0 ) 
 						total = total +(numberOfGroupsum* 45);
 					else if (numberRemainsum== 1 && numberOfGroupsum > 0 && ( (Xvalue!=null) && Xvalue > 0))
 						total = total +(numberOfGroupsum* 45)+ 17;
@@ -214,14 +214,18 @@ public class CheckoutSolution {
 						total = total +(numberOfGroupsum* 45)+ 20;
 					else if (numberRemainsum== 1 && numberOfGroupsum > 0 && ((Zvalue!=null) &&Zvalue > 0))
 						total = total +(numberOfGroupsum* 45)+ 21;
-					else if (numberRemainsum== 2 && numberOfGroupsum > 0 && ((Xvalue!=null) && Xvalue > 1))
-						total = total +(numberOfGroupsum* 45)+(2* 17);
-					else if (numberRemainsum== 2 && numberOfGroupsum > 0 && ((Yvalue!=null) && ( Yvalue > 1)||(Svalue!=null) && (Svalue > 1)||(Tvalue!=null) &&(Tvalue > 1)))
-						total = total +(numberOfGroupsum* 45)+(2* 20);
-					else if (numberRemainsum== 2 && numberOfGroupsum > 0 && ( (Zvalue!=null) && Zvalue > 1))
-						total = total +(numberOfGroupsum* 45)+ (2*21);
-										
-									
+					else if (numberRemainsum== 2 ) 
+					{ if (Xvalue!=null && Xvalue == 2) 
+						total = total +(numberOfGroupsum* 45)+ 2*17;
+					else if((Xvalue!=null && Xvalue ==1) && ((Yvalue!=null) && Yvalue > 1)|| ((Svalue!=null) && Svalue > 1)||( (Tvalue!=null) && Tvalue > 1))
+						total = total +(numberOfGroupsum* 45)+ (1*17) + (1* 20);
+					else if ((Xvalue!=null && Xvalue == 1) && ((Zvalue!=null) &&Zvalue > 1))
+						total = total +(numberOfGroupsum* 45)+ (1*17)+ (1*21);
+					else if(((Yvalue!=null) && Yvalue > 1)|| ((Svalue!=null) && Svalue > 1)|| ((Tvalue!=null) && Tvalue > 1))
+						total = total +(numberOfGroupsum* 45) + (2* 20);
+					else if ((Zvalue!=null) &&Zvalue > 1)
+						total = total +(numberOfGroupsum* 45)+ (2*21);				
+					}	
 				}			
 				else
 				{	
@@ -304,3 +308,4 @@ public class CheckoutSolution {
 }
     
 }
+
